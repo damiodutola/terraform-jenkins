@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo apt-get update
-yes | sudo apt install openjdk-21-jdk-headless
+sudo apt update
+sudo apt install -y fontconfig openjdk-21-jre
 echo "Waiting for 30 seconds before installing the jenkins package..."
 sleep 30
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
