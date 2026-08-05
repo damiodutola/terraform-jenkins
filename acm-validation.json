@@ -1,0 +1,18 @@
+{
+  "Comment": "ACM validation for jenkins.dami1983.org",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_7ab5831cf4e716a8e02e7a14a75057f4.jenkins.dami1983.org.",
+        "Type": "CNAME",
+        "TTL": 60,
+        "ResourceRecords": [
+          {
+            "Value": "_8ae8529e46e1f3fd1caf5bf561bbfc5e.jkddzztszm.acm-validations.aws."
+          }
+        ]
+      }
+    }
+  ]
+}
