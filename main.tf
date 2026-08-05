@@ -37,7 +37,7 @@ module "lb_target_group" {
   ec2_instance_id          = module.jenkins.jenkins_ec2_instance_ip
 }
 
-/*module "alb" {
+module "alb" {
   source                    = "./load-balancer"
   lb_name                   = "dev-proj-1-alb"
   is_external               = false
@@ -67,4 +67,4 @@ module "aws_ceritification_manager" {
   source         = "./certificate-manager"
   domain_name    = "jenkins.jhooq.org"
   hosted_zone_id = module.hosted_zone.hosted_zone_id
-}*/
+}
