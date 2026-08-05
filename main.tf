@@ -28,7 +28,7 @@ module "jenkins" {
   )
 }
 
-/*module "lb_target_group" {
+module "lb_target_group" {
   source                   = "./load-balancer-target-group"
   lb_target_group_name     = "jenkins-lb-target-group"
   lb_target_group_port     = 8080
@@ -37,7 +37,7 @@ module "jenkins" {
   ec2_instance_id          = module.jenkins.jenkins_ec2_instance_ip
 }
 
-module "alb" {
+/*module "alb" {
   source                    = "./load-balancer"
   lb_name                   = "dev-proj-1-alb"
   is_external               = false
